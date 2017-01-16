@@ -1,0 +1,19 @@
+#main{
+	margin-left:1rem;
+}
+.score-group{
+  margin-bottom:4rem;
+}
+.group-heading{
+	margin-bottom:1rem;
+ 	border-bottom: 1px solid;
+ 	max-width: 250px;
+}
+.games-container{
+  margin: 0;
+  padding: 0;
+}
+.games-container li{
+  list-style-type:none;
+  margin-bottom:2rem;
+}

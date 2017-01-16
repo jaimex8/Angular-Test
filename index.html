@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>    
+  </head>
+
+  <body>
+    <div id="main" ng-app="gameReviews" ng-controller="mainController"> 
+      <div class="score-group" ng-repeat="group in groupList">
+        <div class="group-heading">{{group.score}}</div>
+        <ul class="games-container">
+          <li ng-repeat="game in group.gameData">
+            <span class="game-title">{{game.title}}</span> | <span class="game-score">{{game.metacriticScore}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
